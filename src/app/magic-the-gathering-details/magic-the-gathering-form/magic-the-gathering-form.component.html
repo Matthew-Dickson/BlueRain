@@ -1,0 +1,17 @@
+<form novalidate #form="ngForm" (submit)="onSubmit(form)">
+  <div class = "form-group py-2">
+    <label>CARD NAME</label>
+    <input class="form-control form-control-lg" placeholder="Card name" name="cardName" #cardName = "ngModel"  [(ngModel)]="magicTheGatheringDetailsService.formData.cardName" required [class.invalid] = "cardName.invalid && cardName.touched">
+  </div>
+  <div class = "form-group py-2">
+    <label>CARD TYPE</label>
+    <input class="form-control form-control-lg" placeholder="Card type" name="cardType" #cardType = "ngModel"  [(ngModel)]="magicTheGatheringDetailsService.formData.cardType" required [class.invalid] = "cardType.invalid && cardType.touched">
+  </div>
+  <div class = "form-group py-2">
+    <label>CARD DESCRIPTION</label>
+    <input class="form-control form-control-lg" placeholder="Card description" name="cardDescription" #cardType = "ngModel"  [(ngModel)]="magicTheGatheringDetailsService.formData.cardDiscription" required [class.invalid] = "cardType.invalid && cardType.touched">
+  </div>
+  <div class="form-group py-3">
+    <button type = "submit" class="btn btn-primary btn-lg btn-block" [disabled]="form.invalid" >SUBMIT</button>
+  </div>
+</form>

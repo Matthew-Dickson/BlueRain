@@ -1,0 +1,25 @@
+<div class="py-3">
+  <h1 class="display-4 text-center">Magic The Gathering card</h1>
+</div>
+<div class="row">
+  <div class="col-md-6"><app-magic-the-gathering-form></app-magic-the-gathering-form></div>
+  <div class="col-md-6">
+    <table class="table">
+      <thead class="thead-light">
+        <tr>
+          <th style="inline-size: 8em;">Card Name</th>
+          <th style="inline-size: 8em;">Card Type</th>
+          <th style="inline-size: 8em;">Card Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of magicTheGatheringDetailsService.mtgList$ | async">
+          <td>{{item.cardName}}</td>
+          <td>{{item.cardType}}</td>
+          <td>{{item.cardDiscription}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+

@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "00c695d3-e33e-4cc6-b735-161280735ace": {
+      "ProjectGuid": "00c695d3-e33e-4cc6-b735-161280735ace",
+      "DisplayName": "MTGBacked",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
